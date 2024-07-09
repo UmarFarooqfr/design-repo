@@ -1,0 +1,86 @@
+.main-container{
+    width: 100%;
+    overflow-y: scroll;
+    height: calc(100vh - 4.5rem);
+    display: flex;
+    justify-content: center;
+    font-family: Lora;
+    .inner-container{
+        width: 95%;
+        height: 98%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .card{
+            width: 346px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            margin: 20px 12px 20px 0;
+           .content-container{
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+            .price-tag{
+               height: 15px;
+               font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 0.36px;
+                margin-bottom: 10px;
+                color: #898989;
+            }
+            .content{
+                align-self: stretch;
+                flex-grow: 0;
+                font-size: 24px;
+                font-weight: 600;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.56;
+                letter-spacing: normal;
+                text-align: left;
+                color: #141414;
+            }
+            .color-change{
+                color: #a8917f;
+              }
+              .size{
+                height: 24px;
+                align-self: stretch;
+                flex-grow: 0;
+                font-size: 20px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                text-align: left;
+                color: #383838;
+              }
+              .rental{
+                height: 24px;
+                flex-grow: 0;
+                font-size: 20px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #383838;
+                margin-top: 8px;
+              }
+           }
+        }
+    }
+}
+@media (max-width: 600px) {
+  .card {
+      margin-right:0px !important ;
+  }
+}

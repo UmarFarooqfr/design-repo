@@ -1,0 +1,18 @@
+<div class="main-container">
+  <div class="inner-container">
+    @for (item of listItem; track $index) {
+    <div class="card">
+      <img [src]="item.img" />
+      <div class="content-container">
+        <span class="price-tag">{{ item.priceTag }}</span>
+        <span class="content">
+          <span class="color-change">{{ item.name.split(" ")[0] }}</span>
+          {{ item.name.split(" ").slice(1).join(" ") }}
+        </span>
+        <span class="size"> Size {{ item.size }} </span>
+        <span class="rental"> {{ item.rental }}</span>
+      </div>
+    </div>
+    }
+  </div>
+</div>
